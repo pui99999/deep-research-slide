@@ -79,6 +79,9 @@ def create_deep_research_presentation(research_text, output_file=None, title="�
         fill.solid()
         fill.fore_color.rgb = background_color
         background.line.fill.background()
+        # 背景を最背面に配置
+        background.shadow.inherit = False
+        background.zorder = 0
     
     # タイトルとサブタイトルのテキストボックス
     title_shape = title_slide.shapes.title
@@ -145,6 +148,9 @@ def create_deep_research_presentation(research_text, output_file=None, title="�
         fill.solid()
         fill.fore_color.rgb = background_color
         background.line.fill.background()
+        # 背景を最背面に配置
+        background.shadow.inherit = False
+        background.zorder = 0
     
     toc_title = toc_slide.shapes.title
     toc_content = toc_slide.placeholders[1]
@@ -240,6 +246,9 @@ def create_deep_research_presentation(research_text, output_file=None, title="�
         fill.solid()
         fill.fore_color.rgb = background_color
         background.line.fill.background()
+        # 背景を最背面に配置
+        background.shadow.inherit = False
+        background.zorder = 0
     
     summary_title = summary_slide.shapes.title
     summary_content = summary_slide.placeholders[1]
@@ -306,6 +315,9 @@ def create_research_slide(prs, layout, title, content, title_color, text_color, 
         fill.solid()
         fill.fore_color.rgb = background_color
         background.line.fill.background()
+        # 背景を最背面に配置
+        background.shadow.inherit = False
+        background.zorder = 0
     
     title_shape = slide.shapes.title
     content_shape = slide.placeholders[1]
@@ -356,6 +368,9 @@ def create_research_slide(prs, layout, title, content, title_color, text_color, 
                 fill.solid()
                 fill.fore_color.rgb = background_color
                 background.line.fill.background()
+                # 背景を最背面に配置
+                background.shadow.inherit = False
+                background.zorder = 0
             
             cont_title = continuation_slide.shapes.title
             cont_content = continuation_slide.placeholders[1]
